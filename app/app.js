@@ -10,7 +10,7 @@ function changebgcolor(){
 	if(currentColor != thisColor){
 		console.log(random, floor)
 		document.body.style.backgroundColor = thisColor;
-		document.getElementById('answer').text = thisColor
+		document.getElementById('answer').textContent = thisColor
 		currentColor = thisColor
 	}else{
 		changebgcolor()
