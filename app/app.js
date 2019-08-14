@@ -20,14 +20,17 @@ function changebgcolor(){
 var body = document.getElementsByTagName('body')[0]
 
 
-body.addEventListener("touchstart", function(){
+window.addEventListener("touchstart", function(evt){
+	console.log('touch')
 	changebgcolor()
 }, false);
 
 body.onclick = function(){
+	console.log('click')
 	changebgcolor()
 }
 
 document.onkeydown = function(evt) {
+	console.log('keydown')
     changebgcolor()
 };
